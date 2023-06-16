@@ -8,6 +8,8 @@ function makeDonutButton() {
     document.getElementById('DonutCount').innerText = donuts;
 }
 
+const makeDonutButtonElement = document.getElementById('makeDonutButton');
+makeDonutButtonElement.addEventListener('click' , makeDonutButton);
 
 
 function purchaseAutoMakerButton1() {
@@ -19,7 +21,10 @@ function purchaseAutoMakerButton1() {
     }
 }
 
-function purchaseAutoMakerButton2() {
+const purchaseAutoMakerButton1Element = document.getElementById('purchaseAutoMakerButtton1');
+purchaseAutoMakerButton1Element.addEventListener('click', purchaseAutoMakerButton1);
+
+/*function purchaseAutoMakerButton2() {
     const autoButtonCost = 110;
     if (donuts >= autoButtonCost) {
         donuts -= autoButtonCost;
@@ -65,4 +70,4 @@ function upgradeAutoButtonCount4() {
     const autoButtonCountElement = document.getElementById('autoButtonCount4');
     autoButtonCountElement.textContent = autoButtonCount4;
 }
-
+*/
