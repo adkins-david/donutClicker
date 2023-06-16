@@ -21,7 +21,7 @@ function purchaseAutoMakerButton1() {
     }
 }
 
-const purchaseAutoMakerButton1Element = document.getElementById('purchaseAutoMakerButtton1');
+const purchaseAutoMakerButton1Element = document.getElementById('purchaseAutoMakerButton1');
 purchaseAutoMakerButton1Element.addEventListener('click', purchaseAutoMakerButton1);
 
 /*function purchaseAutoMakerButton2() {
@@ -33,6 +33,10 @@ purchaseAutoMakerButton1Element.addEventListener('click', purchaseAutoMakerButto
     }
 }
 
+const purchaseAutoMakerButton1Element = document.getElementById('purchaseAutoMakerButton2');
+purchaseAutoMakerButton2Element.addEventListener('click', purchaseAutoMakerButton2);
+
+
 function purchaseAutoMakerButton3() {
     const autoButtonCost = 121;
     if (donuts >= autoButtonCost) {
@@ -42,6 +46,10 @@ function purchaseAutoMakerButton3() {
     }
 }
 
+const purchaseAutoMakerButton1Element = document.getElementById('purchaseAutoMakerButton3');
+purchaseAutoMakerButton3Element.addEventListener('click', purchaseAutoMakerButton3);
+
+
 function purchaseAutoMakerButton4() {
     const autoButtonCost = 133;
     if (donuts >= autoButtonCost) {
@@ -50,6 +58,10 @@ function purchaseAutoMakerButton4() {
         upgradeAutoButtonCount4();
     }
 }
+
+const purchaseAutoMakerButton1Element = document.getElementById('purchaseAutoMakerButton4');
+purchaseAutoMakerButton4Element.addEventListener('click', purchaseAutoMakerButton4);
+
 
 function upgradeAutoButtonCount1() {
     const autoButtonCountElement = document.getElementById('autoButtonCount1');
