@@ -18,6 +18,12 @@ function purchaseAutoMakerButton1() {
         donuts -= autoButtonCost;
         autoButtonCount1++;
         upgradeAutoButtonCount1();
+    } else {
+        const autoButtonElement = document.getElementById('purchaseAutoMakerButton1');
+        autoBottonElement.classList.add('fading');
+        setTimeout(() => {
+            autoButtonElement.classList.remove('fading');
+        }, 1000);
     }
 }
 
@@ -79,3 +85,5 @@ function upgradeAutoButtonCount4() {
     const autoButtonCountElement = document.getElementById('autoButtonCount4');
     autoButtonCountElement.textContent = autoButtonCount4;
 }
+
+
