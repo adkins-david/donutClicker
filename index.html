@@ -8,49 +8,52 @@
     <title>Donut Clicker</title>
 </head>
 <body>
-  <p>Donut</p>
-  <img src="Images/donutWithSprinkles.jpg" id="donutWithSprinkles">
+    <p>Donut</p>
+    <img src="Images/donutWithSprinkles.jpg" id="donutWithSprinkles">
   
-  <!--section that handles a click-->
-  <div class="container">
-    <div class="child">
-      <section>
-        <!---contains a button that can be clicked to make donuts-->
-        <button id="makeDonutButton" type="button">Make Donut</button>
-        <!---displays the number of donuts.-->
-        <p>Donut Count</p>
-        <p id="DonutCount">0</p>
-      </section>
+    <!--section that handles a click-->
+    <div class="container">
+        <div class="child">
+            <section>
+                <!---contains a button that can be clicked to make donuts-->
+                <div class="auto-maker">
+                    
+                    <!---displays the number of donuts.-->
+                    <p>Donut Count</p>
+                    <button id="makeDonutButton" type="button">Make Donut</button>
+                    <p><span id="DonutCount">0</span></p>
+                </div>
+            </section>
       
-      <!--section that interacts with AutoClicker-->
-      <section id="AutoClick">
-        <div class="auto-maker">
-          <p>Auto Maker 1</p>
-          <button id="purchaseAutoMakerButton1">Self-made Donuts Level 1</button>
-          <span id="autoButtonCount1">0</span>
-        </div>
+            <!--section that interacts with AutoClicker-->
+            <section id="AutoClick">
+                <div class="auto-maker">
+                    <p>Auto Maker 1</p>
+                    <button id="purchaseAutoMakerButton1">Self-made Donuts Level 1</button>
+                    <span id="autoButtonCount1">0</span>
+                </div>
 
-        <div class="auto-maker">
-          <p>Auto Maker 2</p>
-          <button id="purchaseAutoMakerButton2">Self-made Donuts Level 2</button>
-          <span id="autoButtonCount2">0</span>
-        </div>
+                <div class="auto-maker">
+                    <p>Auto Maker 2</p>
+                    <button id="purchaseAutoMakerButton2">Self-made Donuts Level 2</button>
+                    <span id="autoButtonCount2">0</span>
+                </div>
 
-        <div class="auto-maker">
-          <p>Auto Maker 3</p>
-          <button id="purchaseAutoMakerButton3">Self-made Donuts Level 3</button>
-          <span id="autoButtonCount3">0</span>
-        </div>
+                <div class="auto-maker">
+                    <p>Auto Maker 3</p>
+                    <button id="purchaseAutoMakerButton3">Self-made Donuts Level 3</button>
+                    <span id="autoButtonCount3">0</span>
+                </div>
 
-        <div class="auto-maker">
-          <p>Auto Maker 4</p>
-          <button id="purchaseAutoMakerButton4">Self-made Donuts Level 4</button>
-          <span id="autoButtonCount4">0</span>
+                <div class="auto-maker">
+                    <p>Auto Maker 4</p>
+                    <button id="purchaseAutoMakerButton4">Self-made Donuts Level 4</button>
+                    <span id="autoButtonCount4">0</span>
+                </div>
+            </section>
         </div>
-      </section>
     </div>
-  </div>
   
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

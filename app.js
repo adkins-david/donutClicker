@@ -2,6 +2,7 @@ let donuts = 0;
 let autoButtonCount1 = 0;
 let autoButtonCount2 = 0;
 let autoButtonCount3 = 0;
+let autoButtonCount4 = 0;
 
 function makeDonutButton() {
     donuts++;
@@ -9,8 +10,7 @@ function makeDonutButton() {
 }
 
 const makeDonutButtonElement = document.getElementById('makeDonutButton');
-makeDonutButtonElement.addEventListener('click' , makeDonutButton);
-
+makeDonutButtonElement.addEventListener('click', makeDonutButton);
 
 function purchaseAutoMakerButton1() {
     const autoButtonCost = 100;
@@ -36,7 +36,6 @@ function purchaseAutoMakerButton2() {
 const purchaseAutoMakerButton2Element = document.getElementById('purchaseAutoMakerButton2');
 purchaseAutoMakerButton2Element.addEventListener('click', purchaseAutoMakerButton2);
 
-
 function purchaseAutoMakerButton3() {
     const autoButtonCost = 121;
     if (donuts >= autoButtonCost) {
@@ -49,7 +48,6 @@ function purchaseAutoMakerButton3() {
 const purchaseAutoMakerButton3Element = document.getElementById('purchaseAutoMakerButton3');
 purchaseAutoMakerButton3Element.addEventListener('click', purchaseAutoMakerButton3);
 
-
 function purchaseAutoMakerButton4() {
     const autoButtonCost = 133;
     if (donuts >= autoButtonCost) {
@@ -61,7 +59,6 @@ function purchaseAutoMakerButton4() {
 
 const purchaseAutoMakerButton4Element = document.getElementById('purchaseAutoMakerButton4');
 purchaseAutoMakerButton4Element.addEventListener('click', purchaseAutoMakerButton4);
-
 
 function upgradeAutoButtonCount1() {
     const autoButtonCountElement = document.getElementById('autoButtonCount1');
