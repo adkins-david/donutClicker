@@ -57,7 +57,8 @@ function purchaseAutoMakerButton3() {
         autoInterval = setInterval(function() {
             donuts++;
             document.getElementById('DonutCount').innerText = donuts;
-    }, 500);
+        }, 500);
+    }
 }
 
 const purchaseAutoMakerButton3Element = document.getElementById('purchaseAutoMakerButton3');
@@ -73,7 +74,8 @@ function purchaseAutoMakerButton4() {
         autoInterval = setInterval(function() {
             donuts++;
             document.getElementById('DonutCount').innerText = donuts;
-    }, 250);
+        }, 250);
+    }
 }
 
 const purchaseAutoMakerButton4Element = document.getElementById('purchaseAutoMakerButton4');
