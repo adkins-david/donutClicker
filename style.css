@@ -3,6 +3,8 @@
 #donutWithSprinkles {
     width: 200px;
     height: 200px;
+    display:block;
+    margin: 0 auto;
 
 }
 .container {
@@ -13,26 +15,19 @@
     height: 200px;
     justify-content: center;
     display: flex;
-    position: relative;
+    align-items: center;
 }
 
 .child {
    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 p {
     text-align: center;
 }
 img {
-    align-content: center;
-    object-position: center;
+   display: block;
+   margin: 0 auto;
 }
 
-#donutWithSprinkles {
-    object-position: center;
-    position: ;
-}
