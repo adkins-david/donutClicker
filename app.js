@@ -36,6 +36,11 @@ function purchaseAutoMakerButton2() {
         donuts -= autoButtonCost;
         autoButtonCount2++;
         upgradeAutoButtonCount2();
+
+        autoInterval = setInterval(function() {
+            donuts++;
+            document.getElementById('DonutCount').innerText = donuts;
+        }, 750);
     }
 }
 
@@ -48,7 +53,11 @@ function purchaseAutoMakerButton3() {
         donuts -= autoButtonCost;
         autoButtonCount3++;
         upgradeAutoButtonCount3();
-    }
+
+        autoInterval = setInterval(function() {
+            donuts++;
+            document.getElementById('DonutCount').innerText = donuts;
+    }, 500);
 }
 
 const purchaseAutoMakerButton3Element = document.getElementById('purchaseAutoMakerButton3');
@@ -60,7 +69,11 @@ function purchaseAutoMakerButton4() {
         donuts -= autoButtonCost;
         autoButtonCount4++;
         upgradeAutoButtonCount4();
-    }
+
+        autoInterval = setInterval(function() {
+            donuts++;
+            document.getElementById('DonutCount').innerText = donuts;
+    }, 250);
 }
 
 const purchaseAutoMakerButton4Element = document.getElementById('purchaseAutoMakerButton4');
