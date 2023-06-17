@@ -3,6 +3,7 @@ let autoButtonCount1 = 0;
 let autoButtonCount2 = 0;
 let autoButtonCount3 = 0;
 let autoButtonCount4 = 0;
+let autoInterval;
 
 function makeDonutButton() {
     donuts++;
@@ -18,11 +19,10 @@ function purchaseAutoMakerButton1() {
         donuts -= autoButtonCost;
         autoButtonCount1++;
         upgradeAutoButtonCount1();
-    } else {
-        const autoButtonElement = document.getElementById('purchaseAutoMakerButton1');
-        autoBottonElement.classList.add('fading');
-        setTimeout(() => {
-            autoButtonElement.classList.remove('fading');
+    
+        autoInterval = setInterval(function() {
+            donuts++;
+            document.getElementById('DonutCount').innerText = donuts;
         }, 1000);
     }
 }
@@ -93,6 +93,7 @@ function resetGame() {
     autoButtonCount2 = 0;
     autoButtonCount3 = 0;
     autoButtonCount4 = 0;
+    clearInterval(autoInterval);
 
     document.getElementById('DonutCount').innerText = donuts;
     upgradeAutoButtonCount1();
