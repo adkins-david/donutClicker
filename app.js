@@ -85,5 +85,21 @@ function upgradeAutoButtonCount4() {
     const autoButtonCountElement = document.getElementById('autoButtonCount4');
     autoButtonCountElement.textContent = autoButtonCount4;
 }
+//Adding a reset button
 
+function resetGame() {
+    donuts = 0;
+    autoButtonCount1 = 0;
+    autoButtonCount2 = 0;
+    autoButtonCount3 = 0;
+    autoButtonCount4 = 0;
 
+    document.getElementById('DonutCount').innerText = donuts;
+    upgradeAutoButtonCount1();
+    upgradeAutoButtonCount2();
+    upgradeAutoButtonCount3();
+    upgradeAutoButtonCount4();
+}
+
+const resetButtonElement = document.getElementById('resetButton');
+resetButtonElement.addEventListener('click', resetGame);
